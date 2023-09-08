@@ -3,12 +3,13 @@ import BlogCard from "@/components/BlogCard";
 import { AiFillPushpin } from "react-icons/ai";
 import { User, category } from "@/data";
 import gj from "../../public/gj.png";
-import Category from "@/components/Category";
+
 import Navbar from "@/components/Navbar";
 import FeaturedPost from "@/components/FeaturedPost";
 import { useEffect, useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import Link from "next/link";
+import { Category } from "@/types";
 
 export default function Home() {
   const ref = useRef(null);
@@ -175,7 +176,7 @@ const PostList = () => {
           organization={v.organization}
           userId={v.userId}
           userImage={v.userImage}
-          userPost={v.userPost[0].content}
+          userPost={v.userPost[0].title}
           userName={v.userName}
           imgUrl={v.userPost[0].img[0].imgUrl}
           showImage={true}

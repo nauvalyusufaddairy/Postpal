@@ -64,6 +64,7 @@ interface ConfirmRegistration {
 }
 
 interface RegisterValues {
+  username: string;
   email: string;
   password: string;
   confirm_password: string;
@@ -71,4 +72,8 @@ interface RegisterValues {
 type ErrorHandling = {
   name: string;
   message: string;
+};
+
+type OnFocus<T> = {
+  [K in keyof T]: boolean;
 };

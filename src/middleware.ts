@@ -28,7 +28,7 @@ export default withAuth({
     },
   },
   pages: {
-    signIn: "/signin",
+    signIn: "/signup",
     error: "/error",
     verifyRequest: "/signup/:path*",
   },

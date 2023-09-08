@@ -3,6 +3,12 @@
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { signIn, signOut } from "next-auth/react";
+import {
+  ConfirmRegistration,
+  ErrorHandling,
+  LoginValues,
+  RegisterValues,
+} from "@/types";
 
 export function useAuth() {
   const router = useRouter();

@@ -36,7 +36,7 @@ export default function Signin() {
         <div className="mt-6">
           Already have an account?{" "}
           <span className="text-teal-600 font-[500] hover:cursor-pointer">
-            signin
+            <Link href={"/signin"}> signin</Link>
           </span>{" "}
         </div>
       </div>

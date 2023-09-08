@@ -1,3 +1,5 @@
+import { Category, UserCollection } from "./types";
+
 export const User: UserCollection = [
   {
     userId: "1",

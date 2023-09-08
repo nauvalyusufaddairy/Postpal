@@ -1,6 +1,7 @@
 import * as yup from "yup";
 
 export function useValidationSchema() {
+  console.log("heeeey ho");
   return {
     loginSchema: yup.object().shape({
       email: yup
@@ -24,6 +25,7 @@ export function useValidationSchema() {
         .matches(/^\w+([\.-]?w+)*@\w+([\.-]?\w+)*(\.\w{2,})+$/, {
           message: "email must be following like example@example.com",
         }),
+      username: yup.string().required("username is required"),
       password: yup
         .string()
         .required("password is required")
@@ -38,7 +40,7 @@ export function useValidationSchema() {
     }),
     confirmRegistrationSchema: yup.object().shape({
       email: yup.string().required(),
-      code: yup.number().required("confirma registration code is required"),
+      code: yup.number().required("verification code is required"),
     }),
   };
 }
