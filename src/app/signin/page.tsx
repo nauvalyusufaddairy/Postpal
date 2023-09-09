@@ -187,7 +187,7 @@ export default function SigninWithEmail() {
                   }
                 ${
                   touched.email && errors.email
-                    ? "border-red-400 border-[2px] bg-red-200"
+                    ? "border-red-500 border-[2px] bg-red-200"
                     : ""
                 }
                 `}
@@ -206,7 +206,7 @@ export default function SigninWithEmail() {
                   }
                 ${
                   touched.password && errors.password
-                    ? "border-red-400 border-[2px] bg-red-200"
+                    ? "border-red-500 border-[2px] bg-red-200"
                     : ""
                 }
                 `}
@@ -230,7 +230,7 @@ export default function SigninWithEmail() {
                     <div className="w-full h-[100px] mt-4 flex flex-col items-start overflow-y-scroll ">
                       {/* email error*/}
                       {errors.email && touched.email ? (
-                        <div className="w-full text-red-400 flex flex-row items-center gap-3 font-[500] text-[1rem] mb-2">
+                        <div className="w-full text-red-500 flex flex-row items-center gap-3 font-[500] text-[1rem] mb-2">
                           <VscError />
                           <ErrorMessage component="div" name="email" />
                         </div>
@@ -239,7 +239,7 @@ export default function SigninWithEmail() {
                       )}
                       {/* password error */}
                       {errors.password && touched.password ? (
-                        <div className="w-full text-red-400 flex flex-row items-center gap-3 font-[500] text-[1rem] mb-2">
+                        <div className="w-full text-red-500 flex flex-row items-center gap-3 font-[500] text-[1rem] mb-2">
                           <VscError />
                           <ErrorMessage component="div" name="password" />
                         </div>
@@ -249,7 +249,7 @@ export default function SigninWithEmail() {
 
                       {/* confirm password error */}
                       {errorMessage.message !== "" ? (
-                        <div className="w-full text-red-400 flex flex-row items-center gap-3 font-[500] text-[1rem] mb-2">
+                        <div className="w-full text-red-500 flex flex-row items-center gap-3 font-[500] text-[1rem] mb-2">
                           <VscError />
                           {errorMessage.message}
                         </div>
