@@ -183,11 +183,11 @@ export default function SigninWithEmail() {
 
                 <div
                   className={`w-full h-[32px]  rounded-md bg-slate-200 ${
-                    focus.email ? "border-teal-400 border-[1px]" : ""
+                    focus.email ? "border-red-600 border-[1px]" : ""
                   }
                 ${
                   touched.email && errors.email
-                    ? "border-red-500 border-[2px] bg-red-200"
+                    ? "border-red-600 border-[2px] bg-red-300/30"
                     : ""
                 }
                 `}
@@ -206,7 +206,7 @@ export default function SigninWithEmail() {
                   }
                 ${
                   touched.password && errors.password
-                    ? "border-red-500 border-[2px] bg-red-200"
+                    ? "border-red-600 border-[2px] bg-red-300/30"
                     : ""
                 }
                 `}

@@ -157,7 +157,7 @@ const Hero = () => {
           </p>
           <div className="mt-10">
             <button className=" text-xl text-white -> px-[14px] py-[2px] lg:px-[22px] lg:py-[8px] md:px-[16px] md:py-[4px] rounded-md bg-teal-950 font-[500]">
-              Start Read'in
+             <Link className="h-full w-full hover:cursor-pointer" href={"/signup"}>Start Reading</Link> 
             </button>
           </div>
         </div>

@@ -14,14 +14,14 @@ export default function Signin() {
               {" "}
               <BsGoogle />
             </div>
-            <div> Sign up with Google</div>
+            <div> Sign in with Google</div>
           </div>
           <div className="mt-4 w-full h-[42px] rounded-2xl border-black border-[1.8px] px-[8px] py-[3px] flex flex-row items-center gap-x-12 hover:cursor-pointer">
             <div className="text-xl">
               {" "}
               <BsGithub />
             </div>
-            <div> Sign up with Github</div>
+            <div> Sign in with Github</div>
           </div>
           <div className="mt-4 w-full h-[42px] rounded-2xl border-black border-[1.8px] px-[8px] py-[3px] flex flex-row items-center gap-x-12 hover:cursor-pointer">
             <div className="text-xl">
