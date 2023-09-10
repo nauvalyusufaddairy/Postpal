@@ -146,7 +146,7 @@ const CategoryListMd = ({
 
 const Hero = () => {
   return (
-    <div className="w-screen h-[80vh]  bg-[#FFC017] flex flex-row px-[56px]">
+    <div className="w-screen h-[80vh]  bg-teal-500 flex flex-row px-[56px]">
       <div className="-> w-full md:w-[50%] h-full flex flex-row justify-start ">
         <div className="mt-[120px]">
           <p className="-> md:text-[77px] lg:text-[92px] text-[36px] font-[500] ">
