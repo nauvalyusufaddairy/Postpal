@@ -259,7 +259,7 @@ const MenuBar = ({ editor }: { editor: Editor }) => {
   );
 };
 
-export default () => {
+export default function Tiptap() {
   const editor = useEditor({
     extensions: [
       BulletList.configure({
@@ -320,4 +320,4 @@ export default () => {
       <EditorContent editor={editor} />
     </div>
   );
-};
+}

@@ -1,7 +1,6 @@
 import * as yup from "yup";
 
 export function useValidationSchema() {
-  console.log("heeeey ho");
   return {
     loginSchema: yup.object().shape({
       email: yup

@@ -31,7 +31,7 @@ export default function RegistrationWithEmail() {
     >
       {({ handleSubmit, errors, touched }: FormikProps<RegisterValues>) => (
         <Form onSubmit={handleSubmit}>
-          <div className="w-screen h-screen bg-gray-200 flex items-center justify-center ">
+          <div className="w-screen h-screen bg-gray-200 flex items-center justify-center  ">
             <div className=" overflow-hidden w-[360px] h-[568px] bg-white relative  justify-center flex flex-row flex-wrap rounded-lg px-[36px] py-[42px] shadow-[rgba(6,_24,_44,_0.4)_0px_0px_0px_2px,_rgba(6,_24,_44,_0.65)_0px_4px_6px_-1px,_rgba(255,_255,_255,_0.08)_0px_1px_0px_inset]">
               <motion.div
                 initial={{ x: 100, opacity: 0 }}
@@ -54,7 +54,7 @@ export default function RegistrationWithEmail() {
                   }
                 ${
                   touched.username && errors.username
-                    ? " border-red-500 border-[2px] bg-red-200"
+                    ? " border-red-500 border-[12px] bg-red-300"
                     : ""
                 }
                 `}
@@ -67,7 +67,7 @@ export default function RegistrationWithEmail() {
                     type="text"
                   />
                 </div>
-                <div
+                {/* <div
                   className={`w-full h-[32px]  rounded-md bg-slate-200 ${
                     focus.email ? "border-teal-400 border-[1px]" : ""
                   }
@@ -126,7 +126,7 @@ export default function RegistrationWithEmail() {
                     placeholder="confirm password"
                     type="password"
                   />
-                </div>
+                </div> */}
                 <div className="w-full h-fit flex items-center justify-center mt-3">
                   <motion.button className="w-[50%] bg-teal-900 py-1 px-3 rounded-md text-white">
                     submit

@@ -70,7 +70,7 @@ const CategoryListSm = () => {
           >
             {category &&
               category.map((v, i) => (
-                <div className="font-[500] ">
+                <div className="font-[500] " key={i}>
                   <p
                     key={i}
                     className={` font-[500] text-black/50 hover:cursor-pointer `}
@@ -105,7 +105,10 @@ const CategoryListMd = ({
           <div className={`w-[500px] flex flex-row flex-wrap gap-4  font-500`}>
             {category &&
               category.map((v, i) => (
-                <div className=" px-[5px] py-[2px] rounded-md bg-teal-950">
+                <div
+                  className=" px-[5px] py-[2px] rounded-md bg-teal-950"
+                  key={i}
+                >
                   <p
                     key={i}
                     className={` font-[500] text-white hover:cursor-pointer `}
@@ -146,7 +149,7 @@ const CategoryListMd = ({
 
 const Hero = () => {
   return (
-    <div className="w-screen h-[80vh]  bg-[#FFC017] flex flex-row px-[56px]">
+    <div className="w-screen h-[80vh]  bg-teal-500 flex flex-row px-[56px]">
       <div className="-> w-full md:w-[50%] h-full flex flex-row justify-start ">
         <div className="mt-[120px]">
           <p className="-> md:text-[77px] lg:text-[92px] text-[36px] font-[500] ">
@@ -157,7 +160,7 @@ const Hero = () => {
           </p>
           <div className="mt-10">
             <button className=" text-xl text-white -> px-[14px] py-[2px] lg:px-[22px] lg:py-[8px] md:px-[16px] md:py-[4px] rounded-md bg-teal-950 font-[500]">
-              Start Read'in
+              Start Reading
             </button>
           </div>
         </div>
@@ -173,6 +176,7 @@ const PostList = () => {
       {User.map((v, i) => (
         <BlogCard
           date=""
+          key={i}
           organization={v.organization}
           userId={v.userId}
           userImage={v.userImage}

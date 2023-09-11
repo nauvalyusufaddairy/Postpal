@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { formatDistanceToNow, parseISO } from "date-fns";
+import { BlogProps } from "@/types";
 
 export default function BlogCard({
   userName,

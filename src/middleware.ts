@@ -13,7 +13,7 @@ export default withAuth({
       if (pathname === "http://localhost:3000/signin") return true;
       if (pathname === "http://localhost:3000/signup") return true;
       if (pathname === "http://localhost:3000/signup/email") return true;
-      if (pathname === "http://localhost:3000/signup/confirm") return true;
+      if (pathname === "http://localhost:3000/signup/verify") return true;
       if (pathname === "http://localhost:3000/api/signin") return true;
       if (pathname === "http://localhost:3000/api/signup") return true;
       if (pathname === "http://localhost:3000/api/confirm_signup") return true;

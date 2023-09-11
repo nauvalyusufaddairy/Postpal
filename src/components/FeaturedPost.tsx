@@ -10,6 +10,7 @@ function FeaturedPost() {
         <div className="w-full flex flex-row justify-center flex-wrap gap-4">
           {User.map((v, i) => (
             <BlogCard
+              key={i}
               date=""
               organization={v.organization}
               userId={v.userId}
