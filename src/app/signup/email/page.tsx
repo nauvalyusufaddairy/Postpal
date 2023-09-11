@@ -54,7 +54,7 @@ export default function RegistrationWithEmail() {
                   }
                 ${
                   touched.username && errors.username
-                    ? " border-red-500 border-[12px] bg-red-300"
+                    ? " border-red-600 border-[2px] bg-red-300/30"
                     : ""
                 }
                 `}
@@ -73,7 +73,7 @@ export default function RegistrationWithEmail() {
                   }
                 ${
                   touched.email && errors.email
-                    ? "border-red-500 border-[2px] bg-red-200"
+                    ? "border-red-600 border-[2px] bg-red-300/30"
                     : ""
                 }
                 `}
@@ -92,7 +92,7 @@ export default function RegistrationWithEmail() {
                   }
                 ${
                   touched.password && errors.password
-                    ? "border-red-500 border-[2px] bg-red-200"
+                    ? "border-red-600 border-[2px] bg-red-300/30"
                     : ""
                 }
                 `}
@@ -112,7 +112,7 @@ export default function RegistrationWithEmail() {
                   }
                 ${
                   touched.confirm_password && errors.confirm_password
-                    ? "border-red-500 border-[2px] bg-red-200"
+                    ? "border-red-600 border-[2px] bg-red-300/30"
                     : ""
                 }
                 `}

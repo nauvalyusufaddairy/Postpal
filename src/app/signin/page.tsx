@@ -187,7 +187,7 @@ export default function SigninWithEmail() {
                   }
                 ${
                   touched.email && errors.email
-                    ? "border-red-500 border-[12px] bg-red-400"
+                    ? "border-red-600 border-[2px] bg-red-300/30"
                     : ""
                 }
                 `}
@@ -206,7 +206,7 @@ export default function SigninWithEmail() {
                   }
                 ${
                   touched.password && errors.password
-                    ? "border-red-500 border-[2px] bg-red-200"
+                    ? "border-red-600 border-[2px] bg-red-300/30"
                     : ""
                 }
                 `}

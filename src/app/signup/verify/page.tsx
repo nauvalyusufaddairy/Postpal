@@ -124,7 +124,7 @@ export default function ConfirmSignup() {
                   }
                 ${
                   touched.code && errors.code
-                    ? "border-red-500 border-[2px] bg-red-200"
+                    ? "border-red-600 border-[2px] bg-red-300/30"
                     : ""
                 }
                 `}
@@ -139,7 +139,7 @@ export default function ConfirmSignup() {
                 </div>
 
                 <div className="w-full h-fit flex items-center justify-center mt-3">
-                  <motion.button className="w-[50%] bg-blue-500 py-1 px-3 rounded-md text-white">
+                  <motion.button className="w-[50%] bg-teal-900 py-1 px-3 rounded-md text-white">
                     submit
                   </motion.button>{" "}
                 </div>
