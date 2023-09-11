@@ -67,7 +67,7 @@ export default function RegistrationWithEmail() {
                     type="text"
                   />
                 </div>
-                {/* <div
+                <div
                   className={`w-full h-[32px]  rounded-md bg-slate-200 ${
                     focus.email ? "border-teal-400 border-[1px]" : ""
                   }
@@ -126,7 +126,7 @@ export default function RegistrationWithEmail() {
                     placeholder="confirm password"
                     type="password"
                   />
-                </div> */}
+                </div>
                 <div className="w-full h-fit flex items-center justify-center mt-3">
                   <motion.button className="w-[50%] bg-teal-900 py-1 px-3 rounded-md text-white">
                     submit
