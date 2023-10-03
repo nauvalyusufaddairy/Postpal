@@ -35,7 +35,8 @@ export default function Home() {
         </div>
         <motion.div
           ref={ref}
-          className=" mt-[32px] w-full flex flex-row justify-center md:px-[56px] gap-4">
+          className=" mt-[32px] w-full flex flex-row justify-center md:px-[56px] gap-4"
+        >
           <div className="w-full ">
             <FeaturedPost />
             <CategoryListSm />
@@ -65,13 +66,15 @@ const CategoryListSm = () => {
         </div>
         <div className="">
           <div
-            className={`w-full flex flex-row justify-start flex-wrap gap-4 `}>
+            className={`w-full flex flex-row justify-start flex-wrap gap-4 `}
+          >
             {category &&
               category.map((v, i) => (
                 <div className="font-[500] " key={i}>
                   <p
                     key={i}
-                    className={` font-[500] text-black/50 hover:cursor-pointer `}>
+                    className={` font-[500] text-black/50 hover:cursor-pointer `}
+                  >
                     {v.category}
                   </p>
                 </div>
@@ -104,10 +107,12 @@ const CategoryListMd = ({
               category.map((v, i) => (
                 <div
                   className=" px-[5px] py-[2px] rounded-md bg-teal-950"
-                  key={i}>
+                  key={i}
+                >
                   <p
                     key={i}
-                    className={` font-[500] text-white hover:cursor-pointer `}>
+                    className={` font-[500] text-white hover:cursor-pointer `}
+                  >
                     {v.category}
                   </p>
                 </div>

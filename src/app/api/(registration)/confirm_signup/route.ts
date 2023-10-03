@@ -21,6 +21,7 @@ export async function POST(req: NextRequest, res: Response) {
   });
   try {
     const result = await client.send(confirm);
+    console.log("confirm signup : ", result);
 
     return NextResponse.json({ result }, { status: 200 });
   } catch (e: any) {

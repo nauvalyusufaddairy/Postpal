@@ -76,8 +76,10 @@ import { useValidationSchema } from "@/hooks/useValidationSchema";
 import { ConfirmRegistration, OnFocus, RegisterValues } from "@/types";
 import { useState } from "react";
 import { useAuth } from "@/hooks/useAuth";
+import { usePathname, useSearchParams } from "next/navigation";
 
 export default function ConfirmSignup() {
+  const email = useSearchParams().get("email");
   const { confirmRegistrationSchema } = useValidationSchema();
   const { confirmSignup, errorMessage } = useAuth();
 
@@ -86,11 +88,12 @@ export default function ConfirmSignup() {
     email: false,
   };
   const [focus, setFocus] = useState(onfocus);
+  console.log("email is ", email);
 
   return (
     <Formik
       initialValues={{
-        email: "",
+        email: email!,
         code: "",
       }}
       onSubmit={confirmSignup}
@@ -124,7 +127,7 @@ export default function ConfirmSignup() {
                   }
                 ${
                   touched.code && errors.code
-                    ? "border-red-600 border-[2px] bg-red-300/30"
+                    ? " border-red-500 border-[2px] bg-red-400/20"
                     : ""
                 }
                 `}
@@ -139,9 +142,12 @@ export default function ConfirmSignup() {
                 </div>
 
                 <div className="w-full h-fit flex items-center justify-center mt-3">
-                  <motion.button className="w-[50%] bg-teal-900 py-1 px-3 rounded-md text-white">
+                  <button
+                    type="submit"
+                    className="w-[50%] bg-teal-900 py-1 px-3 rounded-md text-white"
+                  >
                     submit
-                  </motion.button>{" "}
+                  </button>{" "}
                 </div>
 
                 {errors.code ? (

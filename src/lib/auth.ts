@@ -64,6 +64,7 @@ export const authOptions: NextAuthOptions = {
     },
     signIn({ account }) {
       console.log("nextauth session callback :  ", account);
+      
       return true;
     },
   },

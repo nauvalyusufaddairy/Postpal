@@ -104,7 +104,7 @@ export function useAuth() {
           });
         }
 
-        router.push(`/signup/confirm?email=${values.email}`);
+        router.push(`/signup/verify?email=${values.email}`);
       })
       .catch((rez) => console.log("hahahaS", rez))
       .finally(() => setSubmitting(false));

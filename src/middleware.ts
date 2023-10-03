@@ -4,11 +4,13 @@ export default withAuth({
   callbacks: {
     authorized: async ({ req, token }) => {
       const pathname = req.url;
-      console.log("pathnaem ", pathname);
-      const regex = /http:\/\/localhost:3000\/signup\/confirm\?.*/;
+      console.log("Tolkien", token);
+      const regex = /http:\/\/localhost:3000\/signup\/verify\?.*/;
+      const regexHome = /http:\/\/localhost:3000\/home\?.*/;
 
       if (token) return true;
       if (regex.test(pathname)) return true;
+      if (regexHome.test(pathname)) return true;
       if (pathname === "http://localhost:3000/") return true;
       if (pathname === "http://localhost:3000/signin") return true;
       if (pathname === "http://localhost:3000/signup") return true;
@@ -30,6 +32,5 @@ export default withAuth({
   pages: {
     signIn: "/signup",
     error: "/error",
-    verifyRequest: "/signup/:path*",
   },
 });
